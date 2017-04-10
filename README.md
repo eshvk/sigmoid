@@ -1,2 +1,2 @@
-# Logistic
-Logistic Viz
+# Sigmoid
+Sigmoid Viz
