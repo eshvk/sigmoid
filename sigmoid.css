@@ -4,3 +4,9 @@
 .body {
 	background-color: #fffff8;
   }
+.analytical {
+	font-family: "Gill Sans MT";
+    font-size: 30px;
+    text-anchor: center;
+    fill : #0571b0;
+}

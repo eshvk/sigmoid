@@ -3,6 +3,7 @@
         h = 600,
         padding = 20; //3:2 aspect ratio
     // viewport setup
+    // The viewport is the part of SVG that is going to be visible.
     var artist = (function() {
         var bg = d3.select('body')
             .append('svg')
@@ -22,17 +23,18 @@
                     }
                     g.node()
                         .appendChild(docFragment.documentElement);
-                    var bbBox = g.select('#fofx')
-                                .select('#secondequals')
-                                .node().getBoundingClientRect();
-                    posY = (bbBox.top + bbBox.bottom)/2;
-                    posX = bbBox.right + padding;
-                    console.log(posY, posX);
-                    g
-                    .append('text')
+                    var secondEquals = g.select('#fofx')
+                                .select('#secondequals');
+                    var bbBox = secondEquals.node().getBBox();
+                    posY = bbBox.y + (1.5*bbBox.height);
+                    posX = bbBox.x + 4* padding;
+                    secondEquals
+                    .insert('text')
+                    .attr('class', 'analytical')
                     .attr('x', posX)
-                    .attr('y', posY);
-                    // Append number here
+                    .attr('y', posY)
+                    .text('3')
+                    .attr('display', 'none');
                 });
             }
         }

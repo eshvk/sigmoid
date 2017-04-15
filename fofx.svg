@@ -1,27 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg  id="fofx" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240pt" height="170pt" viewBox="0 0 240 170" version="1.1"><!--latexit:AAAFIHjabVNdbBtFEJ7dddPUbhon6U+atM2VOCUlpHUCxSklJUlTFyhxS504Tmwn
-rM9r55rznXW3buNYllZQ+lIEqKoQohSI+0LKTykghCLEC6oQVAhIAg+88IAQAgmE
-kHhDgvUPpaDu3elmZndmvvlmNp7RNZt7vasIE8eamtNzYc8pZtmaaYQ9ZvwkU7k9
-4aGWOqNJ86iHm5lGQGdfvereubZ25x3tno5dd3buvqurp29//+CRhwLHxsPRaTUx
-o5s2H/MYWV1fWed0rd+sjAeCe2ZZzp6U/2rckEfVqW0v1m2odzc0Nm3cJLAgwiHW
-iBqxVtSKdcK5uKV5a0vrtu072oRLrBcbRL1oEC2iVWwXO4QSjlOb6ZrBxlRTN63R
-tJlgY1zjOgtnLEbTcZ3F0jRlaElNpVyWNJqgnE276+NUnU1ZZtZIHCo5Ttpm1lLZ
-KJvj7VBdK3d3u/bs9Y4FgieODEUDwfLBYIaqzO9V5ANuJOqWe++5d99kpQyDplm4
-IjJ7vOpQvM/3jxgOBI+V63Y7ll33H3hgQhJhc0szUsJ9XAY6+KAEFgiOZDmVuIPl
-ncsHB3zSr6KsDLkODR/239QlqEEupXiWM1s0iq2iadq9HE2YajbNDF5GEunxZngs
-Ty2uqTorOKNZm8kaZmmKRaRYwmzH8mX2CkqHtCSUpGnJz+BK2XqrR56mbTuXjsuT
-acpn7P/vlYy324tkebIvlteMjERqqJVEyayucFPhuQxTEpoledFzUqCqpUmsijpD
-LapyOYnO0gA9fHRk4RGxceFRsUk0hwJBvwS4evyxE67g6FhI6kFtnklikn6dpmyp
-B2Rh7QOdlVa63WKz2BIaMQ2qmpLpiclqhGLEV5WkNTYlCR3W1NKcUCtXjPmk8XE6
-7W68hedEhfpi3Hdbe/vAUCXlMnMlU6WR55oEMvjRxetfn352XmyTIbWTMuewnMPi
-rK8qlWYtvdfr71HkA6Ku1OnMYb9oq/S0K9k5t1vZ1a9Ek5KTfE8h36N0KWwq3z1X
-KCjRqFO+SmnJIzJB9tS0u+nmIP1b0eVszFcesaMsxxKD1Sv9VW5+1DJNLhDUQgO0
-QDt0Qy/4IAIUZiADeXgCnoZn4Dk4DxfgeXgBXoSX4GV4Da7AG/AWvA3vwHvwPnwA
-S/AhXIcb8CV8A9/BL/A7cqB61IzaUAfqRfvRAdSPhtAICqEpRJGGLMRRDj2JnkJn
-0Tl0CS2gK+gaWkKfoE/RDfQ5LuJF/Dp+E1/F1/C7eAl/jD/DK/hb/D3+Af+If8K/
-4T/wn/gvUkNcpJm0EoXsI31khIRIhKhEJwaxyTwpkDPkHDlPLpCL5BJ5hSyQL8gq
-+Zn86gAHcdRW+oVR9drn4T/L4fwbV/6hrQ==
--->
+<svg  id="fofx" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120pt" height="85pt" viewBox="0 0 240 170" version="1.1">
 <defs>
 <g>
 <symbol overflow="visible" id="glyph0-0">
@@ -99,8 +77,10 @@ S/AhXIcb8CV8A9/BL/A7cqB61IzaUAfqRfvRAdSPhtAICqEpRJGGLMRRDj2JnkJn
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph3-1" x="221.2252" y="62.8164"/>
 </g>
-<g style="fill:rgb(0%,0%,0%);fill-opacity:1;" id="secondequals">
-  <use xlink:href="#glyph1-3" x="78.1792" y="174.438"/>
+<svg id="secondequals">
+<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
+  <use xlink:href="#glyph1-3"   x="78.1792" y="120"/>
 </g>
+</svg>
 </g>
 </svg>
