@@ -36,8 +36,34 @@
                     .text('3')
                     .attr('display', 'none');
                 });
+            },
+            drawGraphical: function() {
+                var points = d3.range(-10, 11, 1);
+                var xScale = d3
+                    .scaleLinear()
+                    .range([0 + padding, 2*w/3 - padding]);
+                var yScale = d3
+                    .scaleLinear()
+                    .range([2*h/3 + padding, 0 - padding]);
+                bg
+                .append('g')
+                .attr('class', 'graphical inp')
+                .call(d3.axisBottom(xScale.domain([-10, 10])));
+                var sigmoid = function(x) {return 1/(1+Math.exp(-x));}
+                var sigmoidScaled = function(x) {return yScale(sigmoid(x));}
+                var line = d3.line()
+                .x(xScale)
+                .y(sigmoidScaled)
+                .curve(d3.curveNatural);
+                bg
+                .append('path')
+                .attr('class', 'graphical op')
+                .datum(points)
+                .attr('d', line)
+                ;
             }
         }
     })();
     artist.drawAnalytical();
+    artist.drawGraphical();
 })();

@@ -10,3 +10,16 @@
     text-anchor: center;
     fill : #0571b0;
 }
+.graphical.inp text{
+	font-family: "Gill Sans";
+    font-size: 15px;
+    fill: #ca0020;
+}
+.graphical.inp line, .graphical.inp path{
+	stroke: #ca0020;
+}
+.graphical.op{
+	stroke: #111111;
+	stroke-width: 1.5;
+	fill: none;
+}
