@@ -1,8 +1,9 @@
 /* Red #ca0020 */
 /* Blue #0571b0 */
-/* Blackish #111111 */
-.body {
-	background-color: #fffff8;
+/* Blackish #111 */
+/* Offwhite #fffff8 */
+.background {
+	fill: #fffff8;
   }
 .analytical {
 	font-family: "Gill Sans MT";
@@ -18,8 +19,40 @@
 .graphical.inp line, .graphical.inp path{
 	stroke: #ca0020;
 }
-.graphical.op{
-	stroke: #111111;
-	stroke-width: 1.5;
-	fill: none;
+.graphical.op-static{
+	stroke: #111;
+	stroke-width: 1.5px;
+}
+.graphical.op-dynamic{
+    stroke-opacity: 0.5;
+    stroke: #0571b0;
+   	stroke-width: 5px;
+}
+.slider.track,
+.slider.track-inset,
+.slider.track-overlay {
+      stroke-linecap: round;
+  }
+.slider.track {
+	stroke: #A29FA6;
+    stroke-opacity: 0.3;
+    stroke-width: 10px;
+}
+.slider.track-inset{
+ 	stroke: #A29FA6;
+    stroke-width: 2px;
+}
+.slider.track-overlay{
+	pointer-events: stroke;
+	stroke-width: 50px;
+	cursor: crosshair;
+}
+.slider.handle{
+	fill: salmon;
+    stroke-opacity: 0.5;
+    stroke-width: 1.25px;
+    r: 8px;
+}
+.hidden {
+	display: none;
 }
