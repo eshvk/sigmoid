@@ -32,7 +32,7 @@
                     // Gets bounding box in user space values around secondEquals
                     var bbBox = secondEquals.node().getBBox();
                     posY = bbBox.y + (1.5 * bbBox.height);
-                    posX = bbBox.x + 4 * padding;
+                    posX = bbBox.x + 2.5 * padding;
                     secondEquals
                         .insert('text')
                         .attr('class', 'analytical')
@@ -51,12 +51,12 @@
                     .clamp(true);
                 var yScale = d3
                     .scaleLinear()
-                    .range([2 * h / 3 - padding, h/3 + padding]);
+                    .range([2 * h / 3 - padding, h / 3 + padding]);
                 // Create a chart because you can explicitly position it
                 var chart = bg
                     .append('svg')
                     .attr('width', w)
-                    .attr('height', 2*h/3 + padding)
+                    .attr('height', 2 * h / 3 + padding)
                     .attr('x', w / 3 - padding)
                     .attr('y', 2 * h / 3)
                     .attr('id', 'chart')
@@ -115,7 +115,7 @@
                 */
                 var slider = chart
                     .append('g')
-                    .attr('transform', 'translate(0,' + -padding + ')' )
+                    .attr('transform', 'translate(0,' + -padding + ')')
                     .attr('class', 'sigmaslider');
                 var handle = slider
                     .append('circle')
@@ -125,11 +125,17 @@
                 var dragBehavior = d3.drag().on('start drag', function() {
                     xCurr = Math.min(xScale(10), Math.max(xScale(-10), d3.event.x));
                     handle.attr('cx', xCurr);
+                    // Update line
                     bg
                         .selectAll('.graphical.op-dynamic')
                         .data([d3.range(-10, xScale.invert(xCurr) + 1, 1)])
                         .attr('d', line)
                         .classed('hidden', 0);
+                    // Update analytical
+                    var x = sigmoid(xScale.invert(xCurr));
+                    d3.select('.analytical')
+                    .text(parseFloat(x).toFixed(4))
+                    .attr('display', 'inline');
                 })
                 slider
                     .append('line')
